@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Topic 1</title>
       <link rel="stylesheet" href="CSS/theStyle.css">
-      <link href="Javascript/pong.js">
+
   </head>
   <body>
 
@@ -15,79 +15,36 @@
     <ul>
       <li><a href="about2.html">About</a></li>
       <li><a href="bestwork.html">Best Work Page</a></li>
-      <li><a href="topic1.html">Topic 1</a></li>
-      <li><a href="topic2.html">Topic 2</a></li>
+      <li><a href="topic1.html">Pong and its History</a></li>
+      <li><a href="topic2.html">Baseball Statistics</a></li>
       <li><a href="history.html">History of Javascipt, CSS, and HTML</a></li>
     </ul>
 
 
-<canvas id="myCanvas" width="1000" height="300" style="border:1px solid #000000;"></canvas>
-<script>
 
-  var c = document.getElementById("myCanvas");
-  var ctx = c.getContext("2d");
-  var csx = c.getContext("2d");
-  var bigRect = c.getContext("2d");
-  var pongBall = c.getContext("2d");
+    <br>
+    <h2>The History of Pong</h2>
 
 
-  var yLeftPlayer = 150;
-  var yRightPlayer = 150;
-  var y = 100;
+    <p>Pong was created by Al Alcorn and Nolan Bushnell in 1972</p>
+    <div class="centerTheGdThing"><img src="Images/alcorn.jpg"  width="45%" height="45%"alt="picture of Al Alcorn">    </div>
+    <p> Al Alcorn above. Taken from  <a href="https://www.youtube.com/watch?v=4fBXVtIztBc">https://www.youtube.com/watch?v=4fBXVtIztBc</a></p>
+    <img src="Images/bushnell.jpg" width="45%" height="45%"alt="picture of Nolan Bushnell">
+    <p>A young Nolan Bushnell. Taken from <a href="https://www.intheblack.com/articles/2015/10/01/video-game-pioneer-nolan-bushnell-focuses-on-education">https://www.intheblack.com/articles/2015/10/01/video-game-pioneer-nolan-bushnell-focuses-on-education</a></p>
 
+      <p>Pong was intially released in June 1972 and a home version of the game was released in 1975.</p>
+      <img src="Images/pong.jpeg" width="45%" height="45%" alt="image of pong machine">
+      <p>Image of a pong machine, taken from <a href="https://dayintechhistory.com/dith/november-29-1972-pong-machine/">https://dayintechhistory.com/dith/november-29-1972-pong-machine/</a></p>
+      <p>Pong is essentially table tennis where a square ball bounces off of players paddles and the tops and bottom of the screen with the goal of getting the ball past the other person's paddle.</p>
+      <img src="Images/playingPong.jpg" width="45%" height="45%" alt="picture of pong being played">
+      <p>Image taken from <a href="https://www.bbc.com/news/technology-33005297">https://www.bbc.com/news/technology-33005297</a></p>
 
-
-  bigRect.beginPath();
-  bigRect.rect(0, 0, 1000, 300);
-  bigRect.fillStyle = "black";
-  bigRect.fill();
-
-  ctx.beginPath();
-  ctx.rect(0, 145, 20, 50);
-  ctx.fillStyle = "white";
-  ctx.fill();
-
-  csx.beginPath();
-  csx.rect(980, 145, 20, 50);
-  csx.fillStyle = "white";
-  csx.fill();
-
-  pongBall.beginPath();
-  pongBall.rect(500, 150, 20, 20);
-  pongBall.fillStyle = "white";
-  pongBall.fill();
-
-  canvas.addEventListener('keydown', moveLeftPlayer);
-  canvas.addEventListener('keydown', moveRightPlayer);
-
-
-function moveLeftPlayer(e){
-  if(e.keyCode == 87){
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    yleftPlayer = yleftPlayer + 10;
-    ctx.fillRect(0, yleftPlayer. 20, 50);
-  }
-  if(e.keyCode = 83){
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-    yleftPlayer = yleftPlayer - 10;
-    ctx.fillRect(0, yleftPlayer. 20, 50);
-  }
-}
-
-function moveRightPlayer(e){
-  if(e.keyCode == 38){
-      csx.clearRect(0, 0, canvas.width, canvas.height);
-    yRightPlayer = yRightPlayer + 10;
-    csx.fillRect(0, yRightPlayer. 20, 50);
-  }
-  if(e.keyCode = 40){
-      csx.clearRect(0, 0, canvas.width, canvas.height);
-    yRightPlayer = yRightPlayer - 10;
-    csx.fillRect(0, yRightPlayer. 20, 50);
-}
-
-</script>
-
+      <p>Click <a href="pong.html">here</a> to play Pong</p>
+      <footer>
+        <hr>
+        <p>Sam Olsen</p>
+        <p><a href="mailto:mr.awesome313131@gmail.com">mr.awesome313131@gmail.com</a></p>
+      </footer>
     </article>
   </body>
 </html>
